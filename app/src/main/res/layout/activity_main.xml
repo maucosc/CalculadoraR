@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese un número"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24sp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+            <Button
+                android:id="@+id/btnMultiplicar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/btnDividir"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="24sp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="24sp"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ver resultado"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Resultado"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Como usar: 2+2+2+2+2=10"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
